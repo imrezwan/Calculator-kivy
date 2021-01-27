@@ -2,6 +2,8 @@ from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.core.window import Window
 
+# new upload from rezwan branch
+
 Window.size = (500, 700)
 
 class MyLayout(Widget):

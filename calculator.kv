@@ -1,0 +1,164 @@
+<MyLayout>
+    BoxLayout:
+        orientation:"vertical"
+        size: root.width, root.height
+
+        TextInput:
+            id: input_field
+            text: "0"
+            halign: "right"
+            size_hint: (1.0, .15)
+            font_size: 50
+
+        GridLayout:
+            cols: 4
+            rows: 5
+            spacing: 5
+
+            # first row
+            Button: 
+                text: "%"
+                size_hint: (.2, .2)
+                font_size: 35
+            Button: 
+                text: "CE"
+                size_hint: (.2, .2)
+                font_size: 35
+                on_press: root.clearOneDigit()
+
+            Button: 
+                id: clear_text
+                text: "C" 
+                size_hint: (.2, .2) 
+                font_size: 35 
+                on_press: root.clearInput()
+
+
+            Button: 
+                text: "/"
+                size_hint: (.2, .2)
+                font_size: 35
+
+            # second row
+            Button: 
+                text: "7"  
+                size_hint: (.2, .2) 
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("7")
+
+            Button: 
+                text: "8"
+                size_hint: (.2, .2)
+                font_size: 35
+                background_color: 247.0/255, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("8")
+            Button: 
+                text: "9" 
+                size_hint: (.2, .2)  
+                font_size: 35
+                background_color: 247.0/255, 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("9")
+            Button: 
+                text: "x"
+                size_hint: (.2, .2)
+                font_size: 35
+                on_press: root.buttonClicked("*")
+
+            # third row
+            Button: 
+                text: "4"  
+                size_hint: (.2, .2) 
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("4")
+            Button: 
+                text: "5"
+                size_hint: (.2, .2)
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("5")
+            Button: 
+                text: "6" 
+                size_hint: (.2, .2)  
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("6")
+            Button: 
+                text: "-"
+                size_hint: (.2, .2)
+                font_size: 35
+                on_press: root.buttonClicked("-")
+        
+            # forth row
+            Button: 
+                text: "1"  
+                size_hint: (.2, .2) 
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("1")
+
+            Button: 
+                text: "2"
+                size_hint: (.2, .2)
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("2")
+            Button: 
+                text: "3" 
+                size_hint: (.2, .2)  
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("3")
+            Button: 
+                text: "+"
+                size_hint: (.2, .2)
+                font_size: 35
+                on_press: root.buttonClicked("+")
+
+            
+            # forth row
+            Button: 
+                text: "+/-"  
+                size_hint: (.2, .2) 
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+
+            Button: 
+                text: "0"
+                size_hint: (.2, .2)
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked("0")
+            Button: 
+                text: "." 
+                size_hint: (.2, .2)  
+                font_size: 35
+                background_color: 247.0/255 , 184/255.0, 56.0/255, 1.0
+                background_normal:""
+                on_press: root.buttonClicked(".")
+
+            Button: 
+                text: "="
+                size_hint: (.2, .2)
+                font_size: 35
+                on_press: root.calculate()
+
+                
+
+
+            
+
+
+
